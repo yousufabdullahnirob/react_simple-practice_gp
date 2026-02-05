@@ -1,5 +1,5 @@
 export default function WorkSample({ year, experience }) {
-    const mystyle = {
+    const myStyle = {
         color: "red",
         backgroundColor: "yellow",
         padding: "10px",
@@ -7,7 +7,7 @@ export default function WorkSample({ year, experience }) {
         marginBottom: "10px"
     }
     return (
-        <div style={mystyle}>
+        <div style={myStyle}>
             <h2>Work Sample</h2>
             <p>This is a work sample component.</p>
             <p>Year: {year}</p>
