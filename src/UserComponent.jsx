@@ -1,11 +1,14 @@
 import React from 'react'
 
-export default function User() {
+export default function User({userInfo}) {
+  const clickHandler = () => {
+    console.log("clicked");
+  }
   return (
     <div className="card bg-base-100 w-96 shadow-sm">
   <figure>
     <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      src={userInfo.image}
       alt="Shoes" />
   </figure>
   <div className="card-body">
@@ -17,6 +20,7 @@ export default function User() {
     <div className="card-actions justify-end">
       <div className="badge badge-outline">Fashion</div>
       <div className="badge badge-outline">Products</div>
+      <button  onClick={clickHandler} className="btn btn-primary btn-sm">Buy Now</button>
     </div>
   </div>
 </div>
